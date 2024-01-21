@@ -16,11 +16,9 @@ const MusicPlayer = () => {
         <div key={genre.genre}>
           <h1>{genre.genre}</h1>
           <div className="flex flex-wrap">
-            
             {/* Map over the sub-genres and create a tile for each one */}
             {genre.subGenres.map((subGenre) => (
               <div key={subGenre} className="m-4 p-4 border-2 border-black rounded-xl">
-                
                 {/* The Link component navigates to a new page when clicked */}
                 <Link to={`/playlists/${subGenre}`}>{subGenre}</Link>
               </div>
